@@ -1,7 +1,6 @@
 VERSION=0.20.0
 
 HERE="$(dirname "$(readlink -f "${0}")")"
-ARCH="$(uname -m)"
 
 export PATH="${HERE}/exec/Notify:$PATH"
 
