@@ -1,0 +1,16 @@
+VERSION=0.20.0
+
+HERE="$(dirname "$(readlink -f "${0}")")"
+ARCH="$(uname -m)"
+
+export PATH="${HERE}/exec/Notify:$PATH"
+
+##CREATE AND LOAD
+export $(echo "$@" | awk '{ print    $3}')
+touch "${HERE}"/data/games/$AppId
+. "${HERE}/data/games/$AppId" 
+
+##NOTIFY
+notify-desktop -i down -u low "GAMETOOL Ver ${VERSION}" "RUN STEAM GAME ${AppId}"
+
+"$@"

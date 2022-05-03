@@ -1,0 +1,17 @@
+#DAYS GONE
+export __NV_PRIME_RENDER_OFFLOAD=1 
+export __GLX_VENDOR_LIBRARY_NAME=nvidia 
+export PRIMUS_SYNC=1
+export vblank_mode=0
+export VKD3D_CONFIG_FLAG_UPLOAD_HVV=0
+export VKD3D_CONFIG_FLAG_NO_UPLOAD_HVV=0
+export VKD3D_CONFIG=no_upload_hvv,dxr,single_queue,force_exclusive_queue,VKD3D_SHADER_DEBUG,VKD3D_DEBUG
+export RADV_DEBUG=nosam
+export RADV_PERFTEST=nosam
+export MANGOHUD=1 
+export PROTON_NO_FSYNC=1
+export PULSE_LATENCY_MSEC=30 
+export PROTON_ENABLE_NVAPI=1
+#export WINE_FULLSCREEN_FSR=1 
+#export PROTON_NO_ESYNC=1
+

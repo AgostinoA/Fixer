@@ -1,0 +1,4 @@
+#SIM CITY4
+
+#ARGS
+"$@" -CustomResolution:enabled -r1920x1080x32 

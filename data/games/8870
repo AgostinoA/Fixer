@@ -1,0 +1,64 @@
+#BIO SHOCK INFINITE
+
+#HUD
+# export MANGOHUD=1
+# export DXVK_HUD=full
+
+#PROTON
+# export PROTON_USE_VKD3D=1 
+# export PROTON_USE_WINED3D=1
+# export PROTON_USE_WINED3D11=1
+# export PROTON_USE_D9VK=1 
+# export PROTON_NO_D3D11=1 
+    # export PROTON_NO_FSYNC=1
+# export PROTON_NO_ESYNC=1
+# export PROTON_FSYNC=1
+# export PROTON_ESYNC=1
+    # export PROTON_FORCE_LARGE_ADDRESS_AWARE=1 
+# export ENABLE_VKBASALT=1
+# export PROTON_LOG=1
+
+#FSR MESA
+# export RADV_DEBUG=nosam
+# export RADV_PERFTEST=nosam
+# export WINE_FULLSCREEN_FSR=1 
+
+#NVIDIA
+    # export __NV_PRIME_RENDER_OFFLOAD=1 
+    # export __GLX_VENDOR_LIBRARY_NAME=nvidia 
+    # export __GL_THREADED_OPTIMIZATIONS=1
+# export PRIMUS_SYNC=1
+
+#NVIDIA DLSS
+# export PROTON_HIDE_NVIDIA_GPU=0
+# export PROTON_ENABLE_NVAPI=1
+
+#VKD3D
+# export vblank_mode=0
+    # export VKD3D_CONFIG_FLAG_UPLOAD_HVV=0
+    # export VKD3D_CONFIG_FLAG_NO_UPLOAD_HVV=1
+    # export VKD3D_CONFIG=no_upload_hvv
+
+# AUDIO
+# export PULSE_LATENCY_MSEC=30 
+# export PULSE_LATENCY_MSEC=90
+# export WINEDLLOVERRIDES=”xaudio2_7=n,b”
+
+#ARGS
+##This fixed texture issues for BIOSHOCK INFINITE of PROTONDB, crash after loading other scene
+
+# set -- "$@" -DisableTexturePool -notriplebuffer -vulkan
+set -- "$@" -DisableTexturePool -vulkan -maxMem=409
+# -novsync 
+# -refresh 60
+# -DisableTexturePool
+# -windowed
+# -novsync 
+# -notriplebuffer 
+# -vulkan 
+# -dx9 
+# -refresh 60
+# -nointro
+# -nomovies 
+# -dev 
+# -mod tgw 
