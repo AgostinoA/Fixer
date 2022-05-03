@@ -15,5 +15,5 @@ Thanks to the community of Protondb we could solve all the compatibility problem
 
 # HOW USE
 - Download 
-- Add (path run) %command% at Steam Game config
+- Add (path run) %command% at Steam Game config insied game
 - Open Game and Enjoy ^_^
