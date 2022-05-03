@@ -28,10 +28,5 @@ Thanks to the community of Protondb we could solve all the compatibility problem
 ```
 
 ```diff
-! Detect GPU
-! Detect CPU
-! Fix DXVK Config
-! ProtonUp
 ! GUI Manager
-! Fix Performance CPU GPU RAM CACHE
 ```
